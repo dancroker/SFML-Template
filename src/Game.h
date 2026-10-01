@@ -20,7 +20,8 @@ class Game
  private:
   sf::RenderWindow& window;
   
-
+  sf::Texture background_texture{ "../Data/Images/WhackaMole Worksheet/background.png" };
+  sf::Sprite background_sprite{ background_texture };
 };
 
 #endif // SFML_GAME_H

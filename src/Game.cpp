@@ -30,6 +30,7 @@ void Game::update(float dt)
 // Runs after update, use it to tell the window what to draw this frame
 void Game::render()
 {
+	window.draw(background_sprite);
 
 }
 
