@@ -22,6 +22,14 @@ class Game
   
   sf::Texture background_texture{ "../Data/Images/WhackaMole Worksheet/background.png" };
   sf::Sprite background_sprite{ background_texture };
+
+
+  sf::Texture bird_texture{ "../Data/Images/WhackaMole Worksheet/bird.png" };
+  sf::Sprite bird{ bird_texture };
+
+  sf::Font font{ "../Data/Fonts/OpenSans-Bold.ttf" };
+  sf::Text title_text{ font };
+  
 };
 
 #endif // SFML_GAME_H

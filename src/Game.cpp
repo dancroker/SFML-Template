@@ -16,7 +16,14 @@ Game::~Game()
 // We call this once after the game class is instantiated
 bool Game::init()
 {
-
+	bird.setPosition({ 100, 100 });
+	title_text.setString("Whack-a-mole");
+	title_text.setFont(font);
+	title_text.setCharacterSize(200);
+	title_text.setFillColor(sf::Color(255, 255, 255, 128));
+	title_text.setPosition(
+		{window.getSize().x / 2 - title_text.getGlobalBounds().size.x / 2,
+		window.getSize().y / 2 - title_text.getGlobalBounds().size.y / 2});
   return true;
 }
 
